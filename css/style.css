@@ -1,0 +1,334 @@
+/* ===============Продключаем шрифты с сайта https://fonts.google.com============*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+/* ===============Продключаем шрифты файлами	============*/
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* ===============================Стили обнуления =====================================*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* --------------- */
+body{
+	color: #222831;
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+/* ===============================Задаем стили header=====================================*/
+.header {
+	font-weight: bold;
+}
+.header__body {
+	margin: 60px 0px 55px 0px;
+	font-size: 0px;
+}
+.header__logo, .header__nav, .header__check-in{
+	display: inline-block;
+	font-size: 16px;
+}
+.header__logo{
+	margin-right: 185px;
+}
+.nav__manu {
+	margin-right: 75px;
+	font-size: 0;
+}
+.nav__list{
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 16px;
+}
+.nav__list:last-child{
+	margin-right: 0px;
+}
+.nav__list a {
+	color: #222831;
+	line-height: 143%;
+	padding-bottom: 3px;
+	border-bottom: 2px solid transparent;
+}
+.nav__list a:hover{
+	color:blue;
+	border-bottom: 2px solid yellowgreen;
+}
+.header__check-in{
+	font-size: 0;
+}
+.header__linck{
+	display: inline-block;
+	font-size: 16px;
+}
+.header__linck a{
+	color: #FF5722;
+	padding: 12px 24px;
+}
+.header__linck_orange-font a{
+	color: #fff;
+	background-color: #FF5722;
+}
+/* ===============================Задаем стили header=====================================*/
+/* ===============================Задаем стили main=====================================*/
+.main__header {
+	font-size: 0;
+	margin-bottom: 40px;
+}
+.caption{
+	font-size: 20px;
+	color: #222831;
+	line-height: 130%;
+	position: relative;
+}
+.caption::after{
+	width: 75px;
+	height: 2px;
+	background: #222831;
+	content: "";
+}
+.main__introducing {
+	margin-bottom: 10px;
+}
+.main__introducing::after{
+	position: absolute;
+	left: 11%;
+	bottom: 40%;
+	margin: -1px 0px -1px 0px;
+}
+.main__wrapper{
+	position: relative;
+	height: 200px;
+}
+.main__title {
+	font-size: 52px;
+	font-weight: bold;
+	line-height: 122%;
+	font-family: 'Lora';
+	color: #10375C;
+	max-width: 665px;
+	margin-right: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.main__title span{
+	color: #DD2C00;
+}
+.main__text {
+	color: #6A6A6A;
+	font-size: 20px;
+	max-width: 380px;
+	line-height: 133%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.main__body {
+	margin-bottom: 50px;
+	font-size: 0;
+}
+.main__items{
+	max-width: 540px;
+	margin-right: 40px;
+	padding: 30px 30px 30px 0px;
+	margin-bottom: 50px;
+}
+.main__row {
+	font-size: 0;
+	margin-bottom: 65px;
+}
+.main__row:last-child{
+	margin-bottom: 0px;
+}
+.main__item {
+	display: inline-block;
+}
+.item-main__title {
+	color: #10375C;
+	font-size: 32px;
+	line-height: 121%;
+	margin-bottom: 15px;
+	position: relative;
+	padding-left: 54px;
+}
+.item-main__text {
+	color: #9A9A9A;
+	font-size: 16px;
+	padding-left: 54px;
+}
+.main__item_right {
+	max-width: 230px;
+}
+.main__item_left {
+	margin-right: 75px;
+	width: 230px;
+}
+.item-main__title::before {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+}
+.item-main__title_icon-1::before{
+	background: url("../img/1.png")
+}
+.item-main__title_icon-2::before{
+	background: url("../img/2.png")
+}
+.item-main__title_icon-3::before{
+	background: url("../img/3.png")
+}
+.item-main__title_icon-4::before{
+	background: url("../img/4.png")
+}
+.item-main__title_icon-5::before{
+	background: url("../img/5.png")
+}
+.item-main__title_icon-6::before{
+	background: url("../img/6.png")
+}
+.info-main__frispes::after{
+	position: absolute;
+	top: 60%;
+	left: 30%;
+	margin: -1px 0px -1px 0px;
+	background-color: #fff;
+}
+.main__info, .main__items{
+	display:inline-block;
+}
+.main__info{
+	width: 540px;
+	padding: 55px;
+	vertical-align: top;
+	background: #10375C;
+	
+}
+.info-main__frispes{
+	margin-bottom: 15px;
+	color: #fff;
+}
+.info-main__title {
+	font-family: "Lora";
+	font-size: 40px;
+	line-height: 121%;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.info-main__text {
+	font-size: 20px;
+	line-height: 133%;
+	color: #fff;
+}
+.main__leaflet {
+	margin-top: 50px;
+	max-width: 350px;
+}
+.leaflet-main__img{
+	margin-bottom: 15px;
+}
+.leaflet-main__text {
+	color: #222831;
+	font-family: "Lora";
+	font-size: 22px;
+	line-height: 121%;
+}
+.leaflet-main__name {
+	color: #9A9A9A;
+	font-size: 16px;
+	padding: 16px 0px;
+}
+.main__footer {
+	text-align: center;
+}
+.footer-main__title {
+	color: #0D2C4A;
+	font-family: 'Lora';
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 121%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.footer-main__sub-title {
+	color: #9A9A9A;
+	font-size: 18px;
+	line-height: 138%;
+	margin-bottom: 55px;
+}
+.footer-main__links {
+	margin-bottom: 100px;
+	font-size: 0;
+}
+.footer-main__link {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 60px;
+}
+.footer-main__link:last-child{
+	margin-right: 0;
+}
+
+
+
+/* ===============================Задаем стили main=====================================*/
+/* ===============================Задаем стили footer=====================================*/
+/* ===============================Задаем стили footer=====================================*/
